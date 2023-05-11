@@ -73,7 +73,7 @@ Resources:
   GraphQLApiDeployment:
     Type: 'AWS::ApiGateway::Deployment'
     Properties:
-      RestApiId: !Ref GraphQLApiExample
+      RestApiId: !Ref GraphQLApi
       StageName: v1
     DependsOn:
       - GraphQLApiResource
