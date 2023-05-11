@@ -1,0 +1,21 @@
+{
+	"name": "graphql-apollo-lambda-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example/issues"
+	},
+	"homepage": "https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example#readme"
+}
