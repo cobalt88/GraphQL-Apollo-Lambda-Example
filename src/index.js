@@ -5,7 +5,7 @@ import {
 	handlers,
 } from "@as-integrations/aws-lambda";
 
-import { typeDefs, resolvers } from "./schema/index.js";
+import { typeDefs, resolvers } from "./graphql/index.js";
 
 const PORT = process.env.PORT || 4003;
 

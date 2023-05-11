@@ -11,3 +11,5 @@ const Query = {
 
 	GetRoles: () => "Made it to the get roles resolver",
 };
+
+export default Query;
