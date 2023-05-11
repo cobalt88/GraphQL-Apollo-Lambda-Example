@@ -18,5 +18,12 @@
 	"bugs": {
 		"url": "https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example/issues"
 	},
-	"homepage": "https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example#readme"
+	"homepage": "https://github.com/cobalt88/GraphQL-Apollo-Lambda-Example#readme",
+	"dependencies": {
+		"@apollo/server": "^4.7.1",
+		"@as-integrations/aws-lambda": "^2.0.1",
+		"graphql": "^16.6.0",
+		"graphql-scalars": "^1.21.3",
+		"graphql-tag": "^2.12.6"
+	}
 }
