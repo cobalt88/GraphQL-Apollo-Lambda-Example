@@ -6,7 +6,7 @@ Parameters:
     Type: String
 
   BucketName:
-    Description: lambda-deploy-graph-example
+    Description: lambda-graph-api
     Type: String
 
 Resources:
@@ -17,7 +17,7 @@ Resources:
         S3Bucket: !Ref BucketName
         S3Key: !Sub dist-${Version}.zip
       Handler: src/index.handler
-      Description: GraphQL Apollo Server Example
+      Description: GraphQL Apollo Server
       Role: !GetAtt LambdaExecutionRole.Arn
       Runtime: nodejs18.x
       Timeout: 10
@@ -49,7 +49,7 @@ Resources:
   GraphQLApi:
     Type: 'AWS::ApiGateway::RestApi'
     Properties:
-      Name: apollo-graphql-api-example
+      Name: lambda-graphql-api
 
   GraphQLApiResource:
     Type: 'AWS::ApiGateway::Resource'

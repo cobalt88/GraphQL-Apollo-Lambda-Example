@@ -7,16 +7,19 @@ import {
 
 import { typeDefs, resolvers } from "./graphql/index.js";
 
-const PORT = process.env.PORT || 4003;
-
-// standalone server starter
+// new apollo server inastance
 const server = new ApolloServer({
 	typeDefs,
 	resolvers,
 });
 
-export const graphqlHandler = startServerAndCreateLambdaHandler(
-	server,
-	// We will be using the Proxy V2 handler
-	handlers.createAPIGatewayProxyEventV2RequestHandler()
-);
+
+exports.handler = async () => {
+	return {
+		body: "Hello from Lambda",
+	};
+};
+// export default startServerAndCreateLambdaHandler(
+// 	server,
+// 	handlers.createAPIGatewayProxyEventV2RequestHandler()
+// );

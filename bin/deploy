@@ -6,7 +6,7 @@ OUTPUT_DIR=dist
 CURRENT_DIR=$(pwd)
 ROOT_DIR="$( dirname "${BASH_SOURCE[0]}" )"/..
 APP_VERSION=$(date +%s)
-STACK_NAME=graph-apollo-lambda-example
+STACK_NAME=lambda-graph-api-2
 
 cd $ROOT_DIR
 
