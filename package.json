@@ -1,5 +1,5 @@
 {
-	"name": "graphql-apollo-lambda-example",
+	"name": "lambda-graph-api",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -7,7 +7,7 @@
 	"private": true,
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"deploy": "S3_BUCKET=lambda-deploy-graph-example ./bin/deploy"
+		"deploy": "S3_BUCKET=lambda-graph-api ./bin/deploy"
 	},
 	"repository": {
 		"type": "git",

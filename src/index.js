@@ -5,12 +5,12 @@ import {
 	handlers,
 } from "@as-integrations/aws-lambda";
 
-import { typeDefs, resolvers } from "./graphql/index.js";
+import { Resolvers, TypeDefs } from "./graphql/index.js";
 
 // new apollo server inastance
 const server = new ApolloServer({
-	typeDefs,
-	resolvers,
+	Resolvers,
+	TypeDefs,
 });
 
 
