@@ -5,11 +5,11 @@ const typeDefs = gql`
 	${scalarTypeDefs}
 	type Query {
 		hello: String
-		GetUserById(id: ID!): String
-		GetUsers(limit: Int!): String
-		GetRole(id: ID!): String
-		GetRoles(limit: Int!): String
+		GetUserById: String
+		GetUsers: String
+		GetRole: String
+		GetRoles: String
 	}
 `;
 
-export default typeDefs;
+export { typeDefs };

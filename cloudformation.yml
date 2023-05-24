@@ -16,7 +16,7 @@ Resources:
       Code:
         S3Bucket: !Ref BucketName
         S3Key: !Sub dist-${Version}.zip
-      Handler: src/index.handler
+      Handler: src/index.graphqlHandler
       Description: GraphQL Apollo Server
       Role: !GetAtt LambdaExecutionRole.Arn
       Runtime: nodejs18.x

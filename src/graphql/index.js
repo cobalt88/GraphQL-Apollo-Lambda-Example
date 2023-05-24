@@ -1,11 +1,8 @@
-import Query from "./resolvers.js";
-import typeDefs from "./typeDefs.js";
+import { Query } from "./resolvers.js";
+import { typeDefs } from "./typeDefs.js";
 
-const Resolvers = {
+const resolvers = {
 	Query,
 };
 
-const TypeDefs = typeDefs;
-
-export { Resolvers, TypeDefs };
- 
+export { resolvers, typeDefs };

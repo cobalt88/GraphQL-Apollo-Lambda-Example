@@ -15,3 +15,5 @@ aws cloudformation deploy \
 https://n7m5szr73g.execute-api.us-east-1.amazonaws.com/v1/graphql
 
 S3_BUCKET=lambda-graph-api ./bin/deploy
+
+ curl -d '{"query":"query {hello}"}' https://n7m5szr73g.execute-api.us-east-1.amazonaws.com/v1/graphql
